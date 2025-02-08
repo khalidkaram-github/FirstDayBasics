@@ -528,6 +528,31 @@
                 //Console.WriteLine();
             }
 
+            int[] numbers = { 5, 10, 90, 3, 14, 2, 44, 32, 4566, 77, 5, 55, 2, 798789, 9, 9, 6, 22, 787, 5, 5, 5, 5, 55, 5, 5, 5, 5, 5, 555555, 5, 8, 8, 55, 5, 5 };
+
+
+            int maxValue, index;
+
+            maxValue = numbers[0];
+            index = 0;
+
+            for (int i = 0; i < numbers.Length; i++)
+            {
+                if (i == 0) continue;
+
+                if (numbers[i] > maxValue)
+                {
+                    maxValue = numbers[i];
+                    index = i;
+                }
+            }
+
+            Console.WriteLine($"Max value ={maxValue} ,in {index} place");
+
+
+
+
+
             #endregion
 
             #region 8th Session
