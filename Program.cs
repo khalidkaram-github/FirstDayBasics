@@ -41,7 +41,7 @@
             //delegates , lampda expressio , anonymous functions , generics ,  
             #endregion
 
-            #region First Session
+            #region 1st Session
 
             // -**What to Cover:**
             //-Overview of C# and .NET Framework/Runtime.
@@ -53,7 +53,7 @@
 
             #endregion
 
-            #region Second Session
+            #region 2nd Session
 
             #region Firs Example
 
@@ -101,7 +101,7 @@
 
             #endregion
 
-            #region Third Session
+            #region 3rd Session
 
             //decimal y = 500;
             //int f = (int)y;
@@ -181,8 +181,8 @@
 
             #endregion
 
-            #region Fourth Session
-
+            #region 4th Session
+            //loops & swich case
             //int number = 95;
 
 
@@ -280,8 +280,9 @@
 
             #endregion
 
-            #region Fifth Session 
+            #region 5th Session
 
+            //loops & revision
             //int total = 0;
             //for (int i = 1; i <= 50; i++)
             //{
@@ -295,7 +296,7 @@
             //Console.WriteLine("total =" + total);
             #endregion
 
-            #region Six Session 
+            #region 6th Session
             //break & continue
             //nested if
             //nested for loop
@@ -419,7 +420,7 @@
 
             #endregion
 
-            #region Seven Session 
+            #region 7th Session
             //arrays
 
             int numer;
@@ -503,6 +504,23 @@
 
             #endregion
 
+            #region 8th Session
+            //Struct
+
+
+
+
+            #endregion
+
+            #region 9th Session
+            //functions
+
+            #endregion
+
+            #region 10th Session
+            //lists & exceptions
+
+            #endregion
         }
     }
 }
