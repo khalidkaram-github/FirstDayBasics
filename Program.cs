@@ -1,6 +1,26 @@
 ﻿namespace FirstDayBasics
 {
 
+    public struct Person
+    {
+        public int Id;
+        public int Age;
+        public string Name;
+        public bool IsActive;
+
+
+
+        public Person(int id, string name)
+        {
+            Id = id;
+            Name = name;
+        }
+        public void DisplayPersonInfo()
+        {
+            Console.WriteLine($" Id = {Id} , Name = {Name} , Age = {Age} ");
+        }
+
+    }
     class Program
     {
 
@@ -496,10 +516,10 @@
             {
                 for (int j = 0; j < coulmns; j++)
                 {
-                    Console.Write(array[i, j] + " ");
+                    //Console.Write(array[i, j] + " ");
                 }
 
-                Console.WriteLine();
+                //Console.WriteLine();
             }
 
             #endregion
@@ -507,8 +527,52 @@
             #region 8th Session
             //Struct
 
+            //Person p1, p2, p3;
+
+            //p1.Id = 1;
+            //p1.Name = "Ahmed";
+            //p1.Age = 25;
+
+            //p2.Id = 2;
+            //p2.Name = "Hamza";
+            //p2.Age = 30;
+
+            //p3.Id = 3;
+            //p3.Name = "Eslam";
+            //p3.Age = 40;
+
+            Person p;
+            Person p2 = new Person();
+            p2.Id = 2;
+            p2.Name = "ahmed";
+            p2.Age = 90;
+            p2.DisplayPersonInfo();
 
 
+            Console.WriteLine("enter number of students");
+            int length = Convert.ToInt32(Console.ReadLine());
+            Person[] students = new Person[length];
+
+            for (int i = 0; i < students.Length; i++)
+            {
+
+                Person student = students[i];
+
+                Console.WriteLine($"enter id for person {i + 1}");
+                student.Id = Convert.ToInt32(Console.ReadLine());
+
+                Console.WriteLine($"enter name for person {i + 1}");
+                student.Name = Console.ReadLine();
+
+                Console.WriteLine($"enter age for person {i + 1}");
+                students[i].Age = Convert.ToInt32(Console.ReadLine());
+            }
+
+            for (int i = 0; i < students.Length; i++)
+            {
+                students[i].DisplayPersonInfo();
+                //Console.WriteLine($" Id = {students[i].Id} , Name = {students[i].Name} , Age = {students[i].Age} ");
+            }
 
             #endregion
 
