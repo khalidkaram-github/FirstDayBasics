@@ -1,5 +1,11 @@
 ﻿namespace FirstDayBasics
 {
+    struct Car
+    {
+        public string Serial;
+        public string Model;
+
+    }
 
     public struct Person
     {
@@ -541,38 +547,68 @@
             //p3.Name = "Eslam";
             //p3.Age = 40;
 
-            Person p;
-            Person p2 = new Person();
-            p2.Id = 2;
-            p2.Name = "ahmed";
-            p2.Age = 90;
-            p2.DisplayPersonInfo();
+            //Person p;
+            //Person p2 = new Person();
+            //p2.Id = 2;
+            //p2.Name = "ahmed";
+            //p2.Age = 90;
+            //p2.DisplayPersonInfo();
 
 
-            Console.WriteLine("enter number of students");
-            int length = Convert.ToInt32(Console.ReadLine());
-            Person[] students = new Person[length];
+            //Console.WriteLine("enter number of students");
+            //int length = Convert.ToInt32(Console.ReadLine());
 
-            for (int i = 0; i < students.Length; i++)
+            //Person[] students = new Person[length];
+
+            //for (int i = 0; i < students.Length; i++)
+            //{
+
+            //    Person student = students[i];
+
+            //    Console.WriteLine($"enter id for person {i + 1}");
+            //    student.Id = Convert.ToInt32(Console.ReadLine());
+
+            //    Console.WriteLine($"enter name for person {i + 1}");
+            //    student.Name = Console.ReadLine();
+
+            //    Console.WriteLine($"enter age for person {i + 1}");
+            //    students[i].Age = Convert.ToInt32(Console.ReadLine());
+            //}
+
+            //for (int i = 0; i < students.Length; i++)
+            //{
+            //    students[i].DisplayPersonInfo();
+            //    //Console.WriteLine($" Id = {students[i].Id} , Name = {students[i].Name} , Age = {students[i].Age} ");
+            //}
+
+
+
+
+
+            Car car;
+            car.Model = "Toyoatta";
+            car.Serial = "B123445";
+
+
+
+            Car[] cars = new Car[2];// 0,1
+            for (int i = 1; i <= cars.Length; i++)
             {
+                Console.WriteLine($"enter data for car  ");
 
-                Person student = students[i];
+                Console.WriteLine($"Enter car model for car {i}");
+                cars[i - 1].Model = Console.ReadLine();
 
-                Console.WriteLine($"enter id for person {i + 1}");
-                student.Id = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine($"Enter car serial for car {i}");
+                cars[i - 1].Serial = Console.ReadLine();
 
-                Console.WriteLine($"enter name for person {i + 1}");
-                student.Name = Console.ReadLine();
-
-                Console.WriteLine($"enter age for person {i + 1}");
-                students[i].Age = Convert.ToInt32(Console.ReadLine());
             }
 
-            for (int i = 0; i < students.Length; i++)
+            for (int i = 1; i <= cars.Length; i++)
             {
-                students[i].DisplayPersonInfo();
-                //Console.WriteLine($" Id = {students[i].Id} , Name = {students[i].Name} , Age = {students[i].Age} ");
+                //Console.WriteLine($"Model = {cars[i - 1].Model} , Serial = {cars[i - 1].Serial} for Car {i}");
             }
+
 
             #endregion
 
